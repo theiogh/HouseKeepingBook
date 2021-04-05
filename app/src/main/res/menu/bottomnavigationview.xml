@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mainItem"
+        android:icon="@drawable/ic_main"
+        android:title=""/>
+
+    <item
+        android:id="@+id/inputItem"
+        android:icon="@drawable/ic_input"
+        android:title=""/>
+    <item
+        android:id="@+id/breakdownItem"
+        android:icon="@drawable/ic_breakdown"
+        android:title=""/>
+    <item
+        android:id="@+id/calendarItem"
+        android:icon="@drawable/ic_calendar"
+        android:title=""/>
+    <item
+        android:id="@+id/editItem"
+        android:icon="@drawable/ic_edit"
+        android:title="" />
+
+</menu>

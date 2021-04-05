@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ic_calendar_background">
+
+    <TextView
+        android:id="@+id/tv_Previous"
+        android:text="〈"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_CurrentDate"
+        android:text="오늘 날짜"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_Previous"
+        app:layout_constraintBottom_toBottomOf="@id/tv_Previous"/>
+
+    <TextView
+        android:id="@+id/tv_Next"
+        android:text="〉"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_CurrentDate"
+        app:layout_constraintBottom_toBottomOf="@id/tv_CurrentDate"/>
+
+    <ImageButton
+        android:id="@+id/btn_Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/searchff"
+        android:background="#00000000"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_Next"/>
+
+    <TextView
+        android:id="@+id/tv_Calendar"
+        android:text="달력"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_Next"/>
+
+    <TextView
+        android:id="@+id/tv_income"
+        android:text="수입"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_spend"
+        app:layout_constraintRight_toLeftOf="@id/tv_spend"/>
+
+    <TextView
+        android:id="@+id/tv_spend"
+        android:text="지출"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@id/tv_income"
+        app:layout_constraintRight_toLeftOf="@id/tv_balance"
+        app:layout_constraintTop_toBottomOf="@id/tv_Calendar"/>
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:text="합계"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/tv_spend"
+        app:layout_constraintLeft_toRightOf="@id/tv_spend"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_Incomes"
+        android:text="이번 달 총 수입"
+        android:textColor="@color/plus"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_income"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_Spends"/>
+
+    <TextView
+        android:id="@+id/tv_Spends"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="이번 달 총 지출"
+        android:textColor="@color/minus"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@id/tv_Incomes"
+        app:layout_constraintRight_toLeftOf="@id/tv_Balance"
+        app:layout_constraintTop_toBottomOf="@id/tv_spend" />
+
+    <TextView
+        android:id="@+id/tv_Balance"
+        android:text="이번 달 잔액"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_Spends"
+        app:layout_constraintTop_toBottomOf="@id/tv_balance"/>
+
+    <TextView
+        android:id="@+id/Sun"
+        android:text="일"
+        android:textColor="@color/minus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/topbottom_stroke"
+        app:layout_constraintTop_toTopOf="@+id/Wed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/Mon"/>
+    <TextView
+        android:id="@+id/Mon"
+        android:text="월"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/topbottom_stroke"
+        app:layout_constraintTop_toTopOf="@+id/Wed"
+        app:layout_constraintLeft_toRightOf="@id/Sun"
+        app:layout_constraintRight_toLeftOf="@+id/Tus"/>
+    <TextView
+        android:id="@+id/Tus"
+        android:text="화"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/topbottom_stroke"
+        app:layout_constraintTop_toTopOf="@id/Wed"
+        app:layout_constraintLeft_toRightOf="@id/Mon"
+        app:layout_constraintRight_toLeftOf="@id/Wed"/>
+
+    <TextView
+        android:id="@+id/Wed"
+        android:text="수"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:background="@drawable/topbottom_stroke"
+        app:layout_constraintTop_toBottomOf="@id/tv_Spends"
+        app:layout_constraintLeft_toRightOf="@+id/Tus"
+        app:layout_constraintRight_toLeftOf="@+id/Thu"/>
+
+    <TextView
+        android:id="@+id/Thu"
+        android:text="목"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/topbottom_stroke"
+        app:layout_constraintTop_toTopOf="@id/Wed"
+        app:layout_constraintLeft_toRightOf="@id/Wed"
+        app:layout_constraintRight_toLeftOf="@id/Fri"/>
+
+    <TextView
+        android:id="@+id/Fri"
+        android:text="금"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/topbottom_stroke"
+        app:layout_constraintTop_toTopOf="@id/Wed"
+        app:layout_constraintLeft_toRightOf="@id/Thu"
+        app:layout_constraintRight_toLeftOf="@id/Sat"/>
+
+    <TextView
+        android:id="@+id/Sat"
+        android:text="토"
+        android:textColor="@color/plus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/topbottom_stroke"
+        app:layout_constraintTop_toTopOf="@id/Wed"
+        app:layout_constraintLeft_toRightOf="@id/Fri"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:columnWidth="500dp"
+        android:numColumns="7"
+        android:verticalSpacing="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/Wed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FBFAFA">
+
+    <LinearLayout
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="359dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_CurrentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘 날짜"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btn_Search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:src="@drawable/search" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:text="수입"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:text="지출"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:text="합계"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Incomes"
+            android:text="이번 달 총 수입"
+            android:textColor="@color/plus"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_Spends"
+            android:text="이번 달 총 지출"
+            android:textColor="@color/minus"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_Balance"
+            android:text="이번 달 잔액"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/top_stroke">
+
+        <TextView
+            android:id="@+id/tv_Daily"
+            android:text="일일"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/tv_MonthToMonth"
+            android:text="월별"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/tv_ByYear"
+            android:text="연별"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_btnMove"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="32dp"
+        android:gravity="start">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notusebtn"
+            android:layout_width="72dp"
+            android:layout_height="4dp"
+            android:background="#8CFF3030"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topbottom_stroke"
+            android:divider="#00000000"/>
+
+    </LinearLayout>
+
+</LinearLayout>

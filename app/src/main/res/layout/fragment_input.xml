@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFAFA"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp">
+
+        <TextView
+            android:id="@+id/tv_Previous"
+            android:text="취소"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/tv_CurrentDate"
+            android:text="오늘 날짜"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_Next"
+            android:text="완료"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:text="분류"
+                android:layout_marginLeft="31dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_income"
+                android:layout_width="70dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="82dp"
+                android:background="@drawable/off"
+                android:text="수입"
+                android:textColor="@color/plus"
+                android:textSize="10dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_spend"
+                android:layout_width="70dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/off"
+                android:text="지출"
+                android:textColor="@color/plus"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_ImportAmount"
+                android:text="수입 금액"
+                android:layout_marginLeft="31dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            <EditText
+                android:id="@+id/et_Input"
+                android:hint="수입 금액"
+                android:textColorHint="#bebebe"
+                android:layout_marginLeft="16dp"
+                android:inputType="number"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:text="카테고리"
+                android:layout_marginLeft="31dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/et_Category"
+                android:hint="미지정"
+                android:textColorHint="#bebebe"
+                android:layout_marginLeft="20dp"
+                android:focusable="false"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:text="메모사항"
+                android:layout_marginLeft="31dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/et_Memo"
+                android:hint="메모사항이 있다면 적어주세요"
+                android:textColorHint="#bebebe"
+                android:layout_marginLeft="20dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
