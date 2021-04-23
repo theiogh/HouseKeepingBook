@@ -50,3 +50,8 @@ private DatePickerDialog.OnDateSetListener listener = new DatePickerDialog.OnDat
 ### MPAndroidChart 의 PieChart  
 MPandroidChart 라이브러리를 활용하여 PieChart로 원 그래프를 구현했습니다.  
 참고 [https://github.com/PhilJay/MPAndroidChart](here)  
+
+
+## 사진  
+<img src="https://github.com/theiogh/HouseKeepingBook/blob/master/Main.jpg" width="350" height="530" /> <img src="https://github.com/theiogh/HouseKeepingBook/blob/master/DatePickerDialog.jpg" width="350" height="530"/><img src="https://github.com/theiogh/HouseKeepingBook/blob/master/Input.jpg" width="350" height="530"/><img src="https://github.com/theiogh/HouseKeepingBook/blob/master/Breakdown.jpg" width="350" height="530"/><img src="https://github.com/theiogh/HouseKeepingBook/blob/master/BreakdownDialog.jpg" width="350" height="530"/><img src="https://github.com/theiogh/HouseKeepingBook/blob/master/Calendar.jpg" width="350" height="530"/><img src="https://github.com/theiogh/HouseKeepingBook/blob/master/CalendarDialog.jpg" width="350" height="530"/>
+
